@@ -1,0 +1,25 @@
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+
+.card-img-top {
+  height: 320px;
+  object-fit: contain;
+}
+
+.card h5,
+.card p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.card h5 {
+  -webkit-line-clamp: 2;
+}
+
+.card p {
+  -webkit-line-clamp: 3;
+}
