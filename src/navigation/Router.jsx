@@ -1,17 +1,13 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-
-/* Component */
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavApp from "../components/NavApp/NavApp";
+import AuthProvider from "../context/AuthContext";
+import { About, Contact, Home, Login, Product } from "../pages";
+import { ProtectedRoute } from "./ProtectedRoute";
 
-/* Pages */
-import About from "../pages/About/About";
-import Contact from "../pages/Contact/Contact";
-import Home from "../pages/Home/Home";
-import ListProduk from "../pages/Product/Product";
-import Login from "../pages/Login/Login";
 
-function Router() {
+
+const Router = () => {
   const navItems = [
     { label: "Home", link: "/" },
     { label: "Product", link: "/product" },
@@ -21,14 +17,18 @@ function Router() {
 
   return (
     <BrowserRouter>
-      <NavApp navItems={navItems} />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/product" component={ListProduk} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/contact" component={Contact} />
-      <Route exact path="/login" component={Login} />
+      <AuthProvider>
+        <NavApp navItems={navItems} />
+        <Switch>
+          <Route exact path="/login" component={Login} />
+          <ProtectedRoute exact path="/" component={Home} />
+          <ProtectedRoute exact path="/product" component={Product} />
+          <ProtectedRoute exact path="/about" component={About} />
+          <ProtectedRoute exact path="/contact" component={Contact} />
+        </Switch>
+      </AuthProvider>
     </BrowserRouter>
   );
-}
+};
 
 export default Router;
