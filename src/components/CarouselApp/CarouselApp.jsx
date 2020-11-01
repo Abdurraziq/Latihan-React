@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
-import './CarouselApp.css'
+import "./CarouselApp.css";
 
 export default class CarouselApp extends Component {
   render() {
@@ -8,13 +8,9 @@ export default class CarouselApp extends Component {
 
     const carouselItem = items.map(({ image, title, subTitle }, index) => (
       <Carousel.Item key={index}>
-        <img
-          className="d-block w-100"
-          src={image}
-          alt="slide img"
-        />
+        <img className="d-block w-100" src={image} alt="slide img" />
         <Carousel.Caption>
-          <h3>{title}</h3>
+          <h1>{title}</h1>
           <p>{subTitle}</p>
         </Carousel.Caption>
       </Carousel.Item>
