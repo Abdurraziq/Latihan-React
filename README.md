@@ -10,3 +10,4 @@ Latihan/Tugas dibagi ke dalam branch berikut:
 1. [Tugas 2](https://gitlab.com/araziq/pendalaman-react-js/-/tree/tugas-2)
 
 ## Tugas 2 – React Router dan Hooks (proyek Toko Online)
+
