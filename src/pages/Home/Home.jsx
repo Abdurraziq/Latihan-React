@@ -27,7 +27,7 @@ export default class Home extends Component {
         />
         <h2 className="font-weight-bold mt-5 mb-2">DigiStore</h2>
         <p>Selamat datang di Digistore.</p>
-        <h4>Lorem Ipsum</h4>
+        <h4>DigiStore Online</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi
           eos, praesentium molestias dolor obcaecati corrupti fuga. Ea, magnam
