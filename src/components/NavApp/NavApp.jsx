@@ -17,7 +17,7 @@ const NavApp = (props) => {
       className="shadow-sm"
     >
       <Container>
-        <Navbar.Brand href="/">DigiStore</Navbar.Brand>
+        <Navbar.Brand href="/">SafwanStore</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ml-auto">
