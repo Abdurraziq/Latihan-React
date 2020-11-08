@@ -11,7 +11,7 @@ export default class Home extends Component {
             {
               image: "https://wallpaperaccess.com/download/light-gray-1109072",
               title: "DigiStore",
-              subTitle: "Toko DigiStore",
+              subTitle: "Toko Mantap",
             },
             {
               image: "https://wallpaperaccess.com/download/light-gray-1109072",
